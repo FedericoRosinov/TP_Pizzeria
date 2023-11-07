@@ -19,6 +19,7 @@ public class PizzeriaDBContext : DbContext
     public PizzeriaDBContext(DbContextOptions<PizzeriaDBContext>
 options) : base(options)
     { }
+    public DbSet<Pizzeria.Models.Pedido>? Pedido { get; set; }
 
 
 
